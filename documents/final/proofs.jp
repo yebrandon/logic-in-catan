@@ -1,0 +1,55 @@
+﻿CONJECTUREPANEL Conjectures
+PROOF "B, B→H∧D ⊢ H→D"
+INFER B,
+     B→H∧D 
+     ⊢ H→D 
+FORMULAE
+0 ⊥,
+1 ¬D,
+2 D,
+3 H∧D,
+4 H,
+5 B,
+6 B→H∧D 
+IS
+SEQ ("→ intro"[A,B\4,2]) ("contra (classical)"[A\2]) (cut[B,C\3,0]) ("→ elim"[A,B\5,3]) (hyp[A\6]) (hyp[A\5]) (cut[B,C\2,0]) (LAYOUT "∧ elim" (0) ("∧ elim(R)"[A,B\4,2]) (hyp[A\3])) (cut[B,C\0,0]) ("¬ elim"[B\2]) (hyp[A\2]) (hyp[A\1]) (hyp[A\0])
+END
+CONJECTUREPANEL Conjectures
+PROOF "¬((H∨D∨S∨Br)→(H∨D∨S∨Br)) ⊢ (H∨D∨S∨Br)→¬(H∨D∨S∨Br)"
+INFER ¬((H∨D∨S∨Br)→(H∨D∨S∨Br))
+     ⊢ (H∨D∨S∨Br)→¬(H∨D∨S∨Br)
+FORMULAE
+0 ⊥,
+1 H∨D∨S∨Br,
+2 ¬(H∨D∨S∨Br),
+3 ¬((H∨D∨S∨Br)→(H∨D∨S∨Br)),
+4 (H∨D∨S∨Br)→(H∨D∨S∨Br),
+5 (H∨D∨S∨Br)→¬(H∨D∨S∨Br)
+IS
+SEQ (cut[B,C\4,5]) ("→ intro"[A,B\1,1]) (hyp[A\1]) (cut[B,C\0,5]) ("¬ elim"[B\4]) (hyp[A\4]) (hyp[A\3]) ("→ intro"[A,B\1,2]) ("¬ intro"[A\1]) (hyp[A\0])
+END
+CONJECTUREPANEL Conjectures
+PROOF "(H∨D∨S∨Br)→(H∨D∨S∨Br) ⊢ (H∨D∨S∨Br)→¬(¬H∧¬D∧¬S∧¬Br)"
+INFER (H∨D∨S∨Br)→(H∨D∨S∨Br)
+     ⊢ (H∨D∨S∨Br)→¬(¬H∧¬D∧¬S∧¬Br)
+FORMULAE
+0 ⊥,
+1 ¬Br,
+2 Br,
+3 ¬H∧¬D∧¬S∧¬Br,
+4 ¬H∧¬D∧¬S,
+5 ¬S,
+6 S,
+7 ¬H∧¬D,
+8 ¬D,
+9 D,
+10 ¬H,
+11 H,
+12 H∨D,
+13 H∨D∨S,
+14 H∨D∨S∨Br,
+15 ¬(¬H∧¬D∧¬S∧¬Br),
+16 (H∨D∨S∨Br)→(H∨D∨S∨Br)
+IS
+SEQ ("→ intro"[A,B\14,15]) ("¬ intro"[A\3]) (cut[B,C\4,0]) (LAYOUT "∧ elim" (0) ("∧ elim(L)"[A,B\4,1]) (hyp[A\3])) (cut[B,C\7,0]) (LAYOUT "∧ elim" (0) ("∧ elim(L)"[A,B\7,5]) (hyp[A\4])) (cut[B,C\10,0]) (LAYOUT "∧ elim" (0) ("∧ elim(L)"[A,B\10,8]) (hyp[A\7])) ("∨ elim"[A,B,C\13,2,0]) (hyp[A\14]) ("∨ elim"[A,B,C\12,6,0]) (hyp[A\13]) ("∨ elim"[A,B,C\11,9,0]) (hyp[A\12]) (cut[B,C\0,0]) ("¬ elim"[B\11]) (hyp[A\11]) (hyp[A\10]) (hyp[A\0]) (cut[B,C\8,0]) (LAYOUT "∧ elim" (0) ("∧ elim(R)"[A,B\10,8]) (hyp[A\7])) (cut[B,C\0,0]) ("¬ elim"[B\9]) (hyp[A\9]) (hyp[A\8]) (hyp[A\0]) (cut[B,C\5,0]) (LAYOUT "∧ elim" (0) ("∧ elim(R)"[A,B\7,5]) (hyp[A\4])) (cut[B,C\0,0]) ("¬ elim"[B\6]) (hyp[A\6]) (hyp[A\5]) (hyp[A\0]) (cut[B,C\1,0]) (LAYOUT "∧ elim" (0) ("∧ elim(R)"[A,B\4,1]) (hyp[A\3])) (cut[B,C\0,0]) ("¬ elim"[B\2]) (hyp[A\2]) (hyp[A\1]) (hyp[A\0])
+END

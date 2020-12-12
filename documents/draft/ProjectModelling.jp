@@ -1,0 +1,22 @@
+﻿CONJECTUREPANEL Conjectures
+CURRENTPROOF "(P→H∨D∨S∨Br) ⊢ P→¬(H∧D∧S∧Br)"
+INFER (P→H∨D∨S∨Br)
+     ⊢ P→¬(H∧D∧S∧Br)
+IS
+NEXTGOAL
+END
+CONJECTUREPANEL Conjectures
+CURRENTPROOF "¬(P→H∨D∨S∨Br) ⊢ ¬P"
+INFER ¬(P→H∨D∨S∨Br)
+     ⊢ ¬P 
+IS
+NEXTGOAL
+END
+CONJECTUREPANEL Conjectures
+CURRENTPROOF "B(x)→Q(x), ∃x.Q(x) ⊢ ∃x.B(x)"
+INFER B(x)→Q(x),
+     ∃x.Q(x)
+     ⊢ ∃x.B(x)
+IS
+NEXTGOAL
+END
