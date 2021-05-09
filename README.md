@@ -7,7 +7,7 @@
 
 ## About
 
-This project was done as a part of CISC204 - Logic in Computing Science at Queen's University in fall of 2021 by Barrett Arbour, Cameron Beaulieu, Jimmy Lu, and Brandon Ye. Using techniques in propositional and predicate logic, we seek to model and solve a hypothetical problem faced in a slightly altered game of Settlers of Catan.
+This project was done as a part of CISC204 - Logic in Computing Science at Queen's University in fall of 2020 by Barrett Arbour, Cameron Beaulieu, Jimmy Lu, and Brandon Ye. Using techniques in propositional and predicate logic, we seek to model and solve a hypothetical problem faced in a slightly altered game of Settlers of Catan.
 
 ## Project Summary
 
